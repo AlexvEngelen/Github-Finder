@@ -1,10 +1,10 @@
-import React from 'react'
-import { FaHome } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
-        <div className='hero'>
+    <div className='hero'>
       <div className='text-center hero-content'>
         <div className='max-w-lg'>
           <h1 className='text-8xl font-bold mb-8'>Oops!</h1>
@@ -16,7 +16,7 @@ function NotFound() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;
