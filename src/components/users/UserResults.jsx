@@ -1,16 +1,11 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import Spinner from '../layout/Spinner';
 import UserItem from './UserItem';
 import GithubContext from '../../context/github/GithubContext';
 
 function UserResults() {
   // Retrieve data from context
-  const { users, fetchUsers, isLoading } = useContext(GithubContext);
-
-  useEffect(() => {
-    // Get users from API on render
-    fetchUsers();
-  }, []);
+  const { users, isLoading } = useContext(GithubContext);
 
   if (!isLoading) {
     // Show users when data received from github api
